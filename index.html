@@ -1,0 +1,15 @@
+<!doctype html><html><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'>
+<title>Devi & Syehan</title><style>
+body{font-family:Arial;margin:0;background:#f5f9ff;color:#234}section{padding:60px 20px;text-align:center}
+.hero{height:100vh;display:flex;align-items:center;justify-content:center;background:linear-gradient(rgba(255,255,255,.4),rgba(255,255,255,.7)),url('1000454378.jpg') center/cover}
+.box{max-width:900px;margin:auto;background:#fff;padding:30px;border-radius:20px}
+.btn{background:#4a78c2;color:#fff;padding:12px 20px;border-radius:25px;text-decoration:none}
+</style></head><body>
+<div class='hero'><div><h4>Kepada Yth.</h4><h2 id='guest'>Tamu Undangan</h2><h1>Devi & Mohamad Syehan</h1><a class='btn' href='#isi'>Buka Undangan</a></div></div>
+<section id='isi'><div class='box'><h2>10 Juli 2029</h2><p>Jalan Infeksi Citarum No 29</p><a class='btn' href='https://maps.app.goo.gl/JQio2FdFjDrtu6zm8'>Maps</a></div></section>
+<section><div class='box'><h2>RSVP Online</h2><p>Hubungkan form ini ke Google Forms/Sheets untuk penyimpanan otomatis.</p>
+<form action='https://docs.google.com/forms/'><input placeholder='Nama'><br><br><button class='btn'>Kirim</button></form></div></section>
+<script>
+const p=new URLSearchParams(window.location.search);
+document.getElementById('guest').innerText=p.get('to')||'Tamu Undangan';
+</script></body></html>
